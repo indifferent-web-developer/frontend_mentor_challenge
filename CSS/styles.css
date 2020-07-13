@@ -1,0 +1,147 @@
+:root {
+  --slider: linear-gradient(to left, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: var(--Very-Dark-Blue);
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.875rem;
+  color: #eee;
+}
+.container {
+  background: url(../images/bg-mobile.png) no-repeat center/cover;
+  position: relative;
+  height: 97vh;
+}
+.attribution {
+  height: 3vh;
+  text-align: center;
+}
+.icon-holder {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  height: 30%;
+  background: var(--Dark-Blue);
+  border-radius: 10px;
+  border-top-right-radius: 75px;
+}
+.logo {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+.icon {
+  position: absolute;
+  top: 60%;
+  left: 12%;
+}
+.icon-1,
+.icon-2,
+.icon-3 {
+  background: var(--Very-Dark-Blue);
+  margin: 8px;
+  padding: 24px 14px 12px 14px;
+  border-radius: 10px;
+}
+.measure {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  width: 90%;
+  height: 24%;
+  background: var(--Dark-Blue);
+  border-radius: 10px;
+  text-align: center;
+}
+.measure-box {
+  display: inline-block;
+  padding: 15px;
+  background: #fff;
+  color: #111;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+}
+.measure-head {
+  margin-top: 10%;
+}
+.slider-box {
+  margin-top: 20px;
+  height: 25%;
+  position: relative;
+}
+.slider {
+  -webkit-appearance: none;
+  border-radius: 10px;
+  background: var(--Very-Dark-Blue);
+  width: 80%;
+  height: 20px;
+  cursor: pointer;
+}
+.min-val {
+  position: absolute;
+  top: 75%;
+  left: 12%;
+}
+.max-val {
+  position: absolute;
+  top: 75%;
+  right: 10%;
+}
+.attribution > a {
+  text-decoration: none;
+  color: hsl(6, 100%, 80%);
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    background: url(../images/bg-desktop.png) no-repeat;
+    background-position: bottom;
+    background-size: 100% 55%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .icon-holder {
+    margin-left: 15%;
+    position: relative;
+    top: 33%;
+    width: 22%;
+  }
+  .measure {
+    position: relative;
+    top: 38%;
+    margin-right: 15%;
+    width: 40%;
+  }
+  .measure-box {
+    width: 25%;
+    position: absolute;
+    top: -15%;
+    left: 60%;
+  }
+  .measure-head {
+    text-align: left;
+    margin-left: 10%;
+  }
+  .min-val {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+  }
+  .max-val {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+  }
+}

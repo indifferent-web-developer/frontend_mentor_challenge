@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--this is the google font link -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon-holder sub-container">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+        <div class="icon">
+          <a class="icon-1" href="#"
+            ><img src="images/icon-document.svg" alt=""
+          /></a>
+          <a class="icon-2" href="#"
+            ><img src="images/icon-folder.svg" alt=""
+          /></a>
+          <a class="icon-3" href="#"
+            ><img src="images/icon-upload.svg" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="measure sub-container">
+        <div class="measure-head">
+          You’ve used <strong>815 GB</strong> of your storage
+        </div>
+        <div class="measure-box"><strong>185</strong> GB Left</div>
+        <div class="slider-box">
+          <span class="min-val">0 GB</span>
+          <input
+            class="slider"
+            type="range"
+            min="0"
+            max="1000"
+            value="815"
+            readonly
+          />
+          <span class="max-val">1000 GB</span>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Shivam Kumar</a>.
+    </div>
+  </body>
+</html>
